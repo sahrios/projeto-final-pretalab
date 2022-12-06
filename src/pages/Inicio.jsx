@@ -16,11 +16,13 @@ export function Inicio() {
           <h2 className={styles.cardTitle}>Vida</h2>
           <p className={styles.cardText}>Eu conto um pouquinho sobre mim, minha formação, a história da minha migração de carreira, gostos e curiosidades.</p>
         </div>
+
         <div className={styles.cardContainer}>
           <BracketsCurly size={150} color="#686AAC" weight="thin"/>
           <h2 className={styles.cardTitle}>Código</h2>
           <p className={styles.cardText}>Mostro meu portfólio. Tudo o que aprendi até o momento dando destaque para alguns dos projetos que criei enquanto estudo programação.</p>
         </div>
+
         <div className={styles.cardContainer}>
           <AddressBook size={150} color="#686AAC" weight="thin"/>
           <h2 className={styles.cardTitle}>Contatinho</h2>
