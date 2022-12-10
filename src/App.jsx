@@ -3,7 +3,10 @@ import './global.css'
 
 function App() {
   return (
-   <Router />
+    <>
+    <Router />
+    </>
+
   )
 }
 
