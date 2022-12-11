@@ -1,9 +1,6 @@
 import { Header } from "../components/Header";
 import portfolioImg from "../assets/portfolio.svg";
 import styles from "../styles/pages/portfolio.module.css";
-import projetofinalImg from "../assets/projeto-final-pretalab.png";
-import nlwImg from "../assets/nlw.png";
-import primeiroportfolioImg from "../assets/primeiro-portfolio.png";
 import Lista from "./Lista";
 
 export function Portfolio() {
@@ -19,7 +16,7 @@ export function Portfolio() {
         <div className={styles.cardsContainer}>
           <div className={styles.card}>
             <h1>Meu Portfólio em React</h1>
-            <img className={styles.cardImage} src={projetofinalImg} />
+            <img className={styles.cardImage} src="https://media.giphy.com/media/DfnkUMSx0vKPXZMITY/giphy.gif" />
             <p className={styles.cardText}>
               Um site em react para demonstrar meu portfólio.
             </p>
@@ -33,8 +30,8 @@ export function Portfolio() {
           </div>
 
           <div className={styles.card}>
-            <h1>NLW eSports</h1>
-            <img className={styles.cardImage} src={nlwImg} />
+            <h1>Next Level Week (NLW) eSports</h1>
+            <img className={styles.cardImage} src="https://media.giphy.com/media/wr0BPL6HKyN1tPiUP5/giphy.gif" />
             <p>Projeto construído no evento Next Level Week da Rocketseat.</p>
             <a
               className={styles.cardLink}
@@ -47,7 +44,7 @@ export function Portfolio() {
 
           <div className={styles.card}>
             <h1>Meu primeiro Portfólio</h1>
-            <img className={styles.cardImage} src={primeiroportfolioImg} />
+            <img className={styles.cardImage} src="https://media.giphy.com/media/c0DGaYDxa813ZXDAeO/giphy.gif" />
             <p>
               Portfólio profissional criado durante o módulo de HTML e CSS do
               Preta Lab.

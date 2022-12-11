@@ -51,6 +51,10 @@
   cursor: pointer;
 }
 
+.cardLink:hover{
+  color:#28cccc;
+}
+
 .cardRepoContainer{
   display: flex;
   justify-content: center;
@@ -80,10 +84,6 @@
   color: #fff;
   text-align: center;
   list-style: none;
-}
-
-.cardRepoLink{
-  color: #fff;
 }
 
 @media (max-width: 765px) {
