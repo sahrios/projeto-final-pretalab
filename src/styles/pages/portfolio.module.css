@@ -12,6 +12,7 @@
 
 .projectsTitle{
   font-size: 4rem;
+  color:#004aad;
 }
 
 .cardsContainer{
@@ -63,7 +64,7 @@
 
 .cardRepo{
   background: #004aad;
-  width: 40%;
+  width: 20%;
   height: 230px;
   padding: 2rem;
   border-radius: 4px;
@@ -73,7 +74,6 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 2rem;
 }
 
 .cardRepoText{

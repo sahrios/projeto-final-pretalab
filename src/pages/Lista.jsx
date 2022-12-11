@@ -12,29 +12,24 @@ function Lista() {
     
   
     return (
-      <>
-        <div >
-        <ul>
+      <div className={styles.projectsContainer}>
+        <ul className={styles.cardRepoContainer}>
           {repositories.map(repository => {
             return (
-                <div className={styles.cardRepo}>
-                <li key={repository.id} className ={styles.cardRepoText}>
-                    <h3>{repository.name}</h3>
-                    <p >{repository.description}</p>
+                <li key={repository.id} className ={styles.cardRepo}>
+                    <h3 className={styles.cardRepoText}>{repository.name} </h3>
+                    <p className={styles.cardRepoText}>{repository.description}</p>
                     <a href={repository.html_url} target="_blank" className={styles.cardRepoLink}> Ver projeto</a>
-                </li>
-              </div>
-            
+                </li>     
             )
           })}
         </ul>
       </div>
-      </>
-  
     )
 }
   
 export default Lista
+
 
 
 

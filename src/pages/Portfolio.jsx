@@ -65,16 +65,10 @@ export function Portfolio() {
 
       <div className={styles.projectsContainer}>
         <h2 className={styles.projectsTitle}>Outros projetos no meu Github</h2>
-        <div className={styles.projectsContainer}>
-          <div className={styles.cardRepoContainer}>
-            <div>
-              <Lista></Lista>
-            </div>
-            </div>
-          </div>
-      </div>
+        <Lista></Lista>
+       </div>
+          
 
-    
     </>
   );
 }
