@@ -1,47 +1,96 @@
-  .cardContainer {
-    text-align: center;
-    
-  }
-    
-    
-  
-  .cardTitle {
-    padding: 1rem;
-    font-size: 2rem;
-    color: #004aad;
-  }
+*{
+  margin:0;
+  box-sizing: border-box;
+}
 
-  .image{
-    width: 25%;
-    height: 50%;
-    
-  }
+.projectsContainer{
+  width: 100%;
+  color: #004aad;
+  text-align: center;
+  padding-top: 6rem;
+}
 
-  .cardText {
-    font-size: 1.2rem;
-    color: #474a51;
-  }
+.projectsTitle{
+  font-size: 4rem;
+}
 
-  .projectButton{
-    background-color: #004aad;
-    border: none;
-    color: white;
-    padding: 12px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    margin-top: 1rem;
-    width: 20%;
-    border-radius: 4px;
-    cursor: pointer;
+.cardsContainer{
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.card{
+  width: 30%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+
+.cardImage{
+  width: 100%;
+}
+
+.cardLink{
+  background-color: #004aad;
+  border: none;
+  color: #fff;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardRepoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.cardRepo{
+  background: #004aad;
+  width: 40%;
+  height: 230px;
+  padding: 2rem;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardRepoText{
+  color: #fff;
+  text-align: center;
+  list-style: none;
+}
+
+.cardRepoLink{
+  color: #fff;
+}
+
+@media (max-width: 765px) {
+  .cardsContainer {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
   }
-  
-  
-  @media (max-width: 765px) {
-    .homeContainer {
-      flex-direction: column;
-    }
-  }
-  
+}

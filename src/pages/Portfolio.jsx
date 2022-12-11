@@ -9,60 +9,72 @@ import Lista from "./Lista";
 export function Portfolio() {
   return (
     <>
-      <Header text="Meus projetos" image={portfolioImg} />
-
-      <h2 className={styles.cardTitle}> Meus Projetos</h2>
-
-      <div className={styles.cardContainer}>
-        <h2 className={styles.cardTitle}>Meu Portfólio em React</h2>
-        <img className={styles.image} src={projetofinalImg} />
-        <p className={styles.cardText}>
-          Um site em react para demonstrar meu portfólio.
-        </p>
-        <a
-          className={styles.projectButton}
-          href="https://meu-projeto-final-pretalab.vercel.app/"
-          target="_blank"
-        >
-          Ver projeto
-        </a>
+      <div className={styles.headerContainer}>
+        <Header text="Meus projetos" image={portfolioImg} />
       </div>
 
-      <div className={styles.cardContainer}>
-        <h2 className={styles.cardTitle}>NLW eSports</h2>
-        <img className={styles.image} src={nlwImg} />
-        <p className={styles.cardText}>
-          Projeto construído no evento Next Level Week da Rocketseat.
-        </p>
-        <a
-          className={styles.projectButton}
-          href="https://nextlevelweek.netlify.app/"
-          target="_blank"
-        >
-          Ver projeto
-        </a>
+      <div className={styles.projectsContainer}>
+        <h2 className={styles.projectsTitle}> Meus Projetos</h2>
+
+        <div className={styles.cardsContainer}>
+          <div className={styles.card}>
+            <h1>Meu Portfólio em React</h1>
+            <img className={styles.cardImage} src={projetofinalImg} />
+            <p className={styles.cardText}>
+              Um site em react para demonstrar meu portfólio.
+            </p>
+            <a
+              className={styles.cardLink}
+              href="https://meu-projeto-final-pretalab.vercel.app/"
+              target="_blank"
+            >
+              Ver projeto
+            </a>
+          </div>
+
+          <div className={styles.card}>
+            <h1>NLW eSports</h1>
+            <img className={styles.cardImage} src={nlwImg} />
+            <p>Projeto construído no evento Next Level Week da Rocketseat.</p>
+            <a
+              className={styles.cardLink}
+              href="https://nextlevelweek.netlify.app/"
+              target="_blank"
+            >
+              Ver projeto
+            </a>
+          </div>
+
+          <div className={styles.card}>
+            <h1>Meu primeiro Portfólio</h1>
+            <img className={styles.cardImage} src={primeiroportfolioImg} />
+            <p>
+              Portfólio profissional criado durante o módulo de HTML e CSS do
+              Preta Lab.
+            </p>
+            <a
+              className={styles.cardLink}
+              href="https://portfoliosarahrios.netlify.app/"
+              target="_blank"
+            >
+              Ver projeto
+            </a>
+          </div>
+        </div>
       </div>
 
-
-      <div className={styles.cardContainer}>
-        <h2 className={styles.cardTitle}>Meu primeiro Portfólio</h2>
-        <img className={styles.image} src={primeiroportfolioImg} />
-        <p className={styles.cardText}>
-        Portfólio profissional criado durante o módulo de HTML e CSS do Preta Lab.
-        </p>
-        <a
-          className={styles.projectButton}
-          href="https://portfoliosarahrios.netlify.app/"
-          target="_blank"
-        >
-          Ver projeto
-        </a>
+      <div className={styles.projectsContainer}>
+        <h2 className={styles.projectsTitle}>Outros projetos no meu Github</h2>
+        <div className={styles.projectsContainer}>
+          <div className={styles.cardRepoContainer}>
+            <div>
+              <Lista></Lista>
+            </div>
+            </div>
+          </div>
       </div>
 
-
-      <h2 className={styles.cardTitle}> Outros projetos no meu Github</h2>
-
-      <Lista></Lista>
+    
     </>
   );
 }

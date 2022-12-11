@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styles from '../styles/pages/lista.module.css'
+import styles from "../styles/pages/portfolio.module.css";
 
 function Lista() {
     const [ repositories, setRepositories] = useState ([])
@@ -13,16 +13,17 @@ function Lista() {
   
     return (
       <>
-        <div>
+        <div >
         <ul>
           {repositories.map(repository => {
             return (
-  
-              <li className={styles.cardRepoContainer} key={repository.id}>
-                <h3 className={styles.cardName}>{repository.name}</h3>
-                <p>{repository.description}</p>
-                <a href={repository.html_url} target="_blank"> Ver projeto</a>
-              </li>
+                <div className={styles.cardRepo}>
+                <li key={repository.id} className ={styles.cardRepoText}>
+                    <h3>{repository.name}</h3>
+                    <p >{repository.description}</p>
+                    <a href={repository.html_url} target="_blank" className={styles.cardRepoLink}> Ver projeto</a>
+                </li>
+              </div>
             
             )
           })}
