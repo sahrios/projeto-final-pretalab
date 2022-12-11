@@ -18,12 +18,11 @@ export function Sobre() {
         <div className={styles.cardContainer}> 
           <h2 className={styles.cardTitle}>Sarah Rios Rodrigues, prazer! <Smiley size= {40} color="#004aad"/>
           </h2>
-          <p className={styles.cardText}>Sou carioca, moro no Rio de Janeiro, tenho 24 anos, 
-          sou graduada em Psicologia, mas estou fazendo transição de carreira para área de tecnologia. 
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ut omnis debitis dolores recusandae. 
-          Illo, dolorem officiis! Odit soluta culpa reprehenderit quo laboriosam veniam vel iusto! Illo nesciunt molestiae consequuntur?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Eligendi culpa non sapiente voluptas nulla natus assumenda laboriosam eum ad accusamus, voluptatum enim corporis! Perspiciatis voluptatum voluptatem laudantium, quis nulla fuga.
+          <p className={styles.cardText}>Sou carioca, moro no Rio de Janeiro, tenho 24 anos,
+          sou graduada em Psicologia e tenho formação em TCC (Terapia cognitivo-comportamental). Comecei minha transição de carreira para área de tecnologia através do PrograMaria e do PretaLab, onde pude aprender 
+          sobre desenvolvimento front-end (HTML, CSS, JavaScript e ReactJs) e soft skills. 
+          Em breve, estarei iniciando minha segunda graduação em Sistemas de Computação na UFF (Universidade Federal Fluminense). 
+           
         </p>
         </div>
 
